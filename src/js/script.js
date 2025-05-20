@@ -1,21 +1,22 @@
 
-var botaoEntrar 
+var botaoEntrar = document.getElementById("button-submit")
 
 function login() {
 
 
-     var campoUsuário = document.getElementById("usuário").value
+     var campoUsuário = document.getElementById("usuario").value
 
-    var campo = document.getElementById("").value
-
+    
     var campoSenha = document.getElementById("password").value
 
-   if (campoEmail == "adimin@adimin.com" && campoSenha == "adimin192" ) {
-    window.location.replace("dashboard.html")
-   }
+    var campoCodigo = document.getElementById("codigo").value
 
-    console.log("entrou na função de login") 
 
-} else {
-   alert("")
+   if (campoUsuário == 'admin' && campoSenha == '1234' && campoCodigo == 'tplink2025') {
+    window.location.replace("painel.html")
+   } else {
+   alert("validado") 
 }
+console.log("seu acesso foi permitido")
+}
+botaoEntrar.addEventListener('click',login)
