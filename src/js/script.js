@@ -15,7 +15,7 @@ function login() {
    if (campoUsuário == 'admin' && campoSenha == '1234' && campoCodigo == 'tplink2025') {
     window.location.replace("painel.html")
    } else {
-   alert("validado") 
+   alert("invalido") 
 }
 console.log("seu acesso foi permitido")
 }
